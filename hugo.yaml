@@ -1,30 +1,30 @@
-baseURL: "https://nharu.dev/"
+---
+baseURL: https://nharu.dev/
 title: nharu.dev
 pagination:
   pagerSize: 5
 theme: PaperMod
 publishDir: docs
-
+languageCode: ja
+defaultContentLanguage: ja
+hasCJKLanguage: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
 minify:
   disableXML: true
   minifyOutput: true
-
 params:
   env: production
   title: nharu.dev
-  description: "nharu.dev - Yuto Sahashi -"
+  description: Yuto Sahashi
   keywords: []
   author: Me
   images: []
-  DateFormat: "January 2, 2006"
+  DateFormat: January 2, 2006
   defaultTheme: auto
   disableThemeToggle: false
-
   ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: true
@@ -40,50 +40,42 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
-
   assets:
-    favicon: ""
-    favicon16x16: ""
-    favicon32x32: ""
-    apple_touch_icon: ""
-    safari_pinned_tab: ""
-
+    favicon: /favicon.ico
+    favicon16x16: /favicon-16x16.png
+    favicon32x32: /favicon-32x32.png
+    apple_touch_icon: /apple-touch-icon.png
+    safari_pinned_tab: /apple-touch-icon.png
   label:
-    text: "nharu.dev"
-    icon: /apple-touch-icon.png
+    text: nharu.dev
+    icon: https://avatars.githubusercontent.com/u/8305330
     iconHeight: 35
-
   profileMode:
     enabled: true
-    title: "Yuto Sahashi"
-    subtitle: "Shizuoka Univ."
-    imageUrl: "https://avatars.githubusercontent.com/u/8305330"
+    title: Yuto Sahashi
+    subtitle: Shizuoka Univ.
+    imageUrl: https://avatars.githubusercontent.com/u/8305330
     imageWidth: 240
     imageHeight: 240
-    imageTitle: "nharu-0630"
+    imageTitle: nharu-0630
     buttons:
       - name: Archives
-        url: "/archives"
-
+        url: /archives
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
+    Title: Hi there 👋
     Content: Welcome to my blog
-
   socialIcons:
     - name: x
-      url: "https://x.com/nharu_0630"
+      url: https://x.com/nharu_0630
     - name: github
-      url: "https://github.com/nharu-0630"
-
+      url: https://github.com/nharu-0630
   analytics:
     google:
       SiteVerificationTag: ""
-
   cover:
     hidden: true
     hiddenInList: true
     hiddenInSingle: true
-
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -103,7 +95,6 @@ menu:
       name: Tags
       url: /tags/
       weight: 10
-
 pygmentsUseClasses: true
 markup:
   highlight:
