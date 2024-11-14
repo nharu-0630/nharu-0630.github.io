@@ -49,17 +49,17 @@ params:
     safari_pinned_tab: ""
 
   label:
-    text: "Yuto Sahashi"
+    text: "nharu.dev"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
   profileMode:
     enabled: true
     title: "Yuto Sahashi"
-    subtitle: "nharu.dev"
+    subtitle: "Shizuoka Univ."
     imageUrl: "https://avatars.githubusercontent.com/u/8305330"
-    imageWidth: 120
-    imageHeight: 120
+    imageWidth: 240
+    imageHeight: 240
     imageTitle: "nharu-0630"
     buttons:
       - name: Archives
