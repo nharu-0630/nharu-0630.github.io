@@ -26,10 +26,10 @@ params:
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -54,18 +54,16 @@ params:
     iconHeight: 35
 
   profileMode:
-    enabled: false
-    title: nharu.dev
-    subtitle: ""
-    imageUrl: ""
+    enabled: true
+    title: "Yuto Sahashi"
+    subtitle: "nharu.dev"
+    imageUrl: "https://avatars.githubusercontent.com/u/8305330"
     imageWidth: 120
     imageHeight: 120
-    imageTitle:
+    imageTitle: "nharu-0630"
     buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
+      - name: Archives
+        url: "/archives"
 
   homeInfoParams:
     Title: "Hi there \U0001F44B"
@@ -86,11 +84,6 @@ params:
     hiddenInList: true
     hiddenInSingle: true
 
-  editPost:
-    URL: "https://github.com/nharu-0630/nharu-0630.github.io/content"
-    Text: "Suggest Changes"
-    appendFilePath: true
-
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -102,14 +95,14 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: Categories
-      url: /categories/
+    - identifier: archives
+      name: Archives
+      url: /archives/
       weight: 10
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 20
+      weight: 10
 
 pygmentsUseClasses: true
 markup:
