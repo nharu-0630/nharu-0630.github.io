@@ -2,18 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on nharu.dev</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://nharu.dev/posts/</link>
     <description>Recent content in Posts on nharu.dev</description>
     <generator>Hugo -- 0.138.0</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 14 Nov 2024 12:28:58 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja</language>
+    <lastBuildDate>Thu, 14 Nov 2024 15:27:56 +0900</lastBuildDate>
+    <atom:link href="https://nharu.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hoge</title>
-      <link>http://localhost:1313/posts/hoge/</link>
-      <pubDate>Thu, 14 Nov 2024 12:28:58 +0900</pubDate>
-      <guid>http://localhost:1313/posts/hoge/</guid>
-      <description></description>
+      <title>Hello World</title>
+      <link>https://nharu.dev/posts/hello-world/</link>
+      <pubDate>Thu, 14 Nov 2024 15:27:56 +0900</pubDate>
+      <guid>https://nharu.dev/posts/hello-world/</guid>
+      <description>&lt;p&gt;ずっと気になっていたhugoでブログを始めてみました。&lt;/p&gt;
+&lt;p&gt;Github Pagesにデプロイし、独自ドメインを設定しています。最終的には自宅サーバで運用する予定です。
+技術的なことと旅行などの趣味のことを書いていきたいです。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

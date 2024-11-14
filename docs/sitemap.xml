@@ -2,11 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nharu.dev/archives/</loc>
+    <loc>https://nharu.dev/categories/blog/</loc>
+    <lastmod>2024-11-14T15:27:56+09:00</lastmod>
   </url><url>
     <loc>https://nharu.dev/categories/</loc>
+    <lastmod>2024-11-14T15:27:56+09:00</lastmod>
+  </url><url>
+    <loc>https://nharu.dev/posts/hello-world/</loc>
+    <lastmod>2024-11-14T15:27:56+09:00</lastmod>
   </url><url>
     <loc>https://nharu.dev/</loc>
+    <lastmod>2024-11-14T15:27:56+09:00</lastmod>
+  </url><url>
+    <loc>https://nharu.dev/posts/</loc>
+    <lastmod>2024-11-14T15:27:56+09:00</lastmod>
+  </url><url>
+    <loc>https://nharu.dev/archives/</loc>
   </url><url>
     <loc>https://nharu.dev/tags/</loc>
   </url>

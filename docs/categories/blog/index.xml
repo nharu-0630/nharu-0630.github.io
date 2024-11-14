@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>nharu.dev</title>
-    <link>https://nharu.dev/</link>
-    <description>Recent content on nharu.dev</description>
+    <title>Blog on nharu.dev</title>
+    <link>https://nharu.dev/categories/blog/</link>
+    <description>Recent content in Blog on nharu.dev</description>
     <generator>Hugo -- 0.138.0</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 14 Nov 2024 15:27:56 +0900</lastBuildDate>
-    <atom:link href="https://nharu.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nharu.dev/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World</title>
       <link>https://nharu.dev/posts/hello-world/</link>

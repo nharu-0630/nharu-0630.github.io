@@ -58,17 +58,16 @@ params:
     imageWidth: 240
     imageHeight: 240
     imageTitle: nharu-0630
-    buttons:
-      - name: Archives
-        url: /archives
   homeInfoParams:
     Title: Hi there 👋
     Content: Welcome to my blog
   socialIcons:
-    - name: x
-      url: https://x.com/nharu_0630
+    - name: email
+      url: mailto:root@nharu.dev
     - name: github
       url: https://github.com/nharu-0630
+    - name: x
+      url: https://x.com/nharu_0630
   analytics:
     google:
       SiteVerificationTag: ""
@@ -91,6 +90,10 @@ menu:
       name: Archives
       url: /archives/
       weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
     - identifier: tags
       name: Tags
       url: /tags/
@@ -99,3 +102,6 @@ pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
+taxonomies:
+  tag: tags
+  category: categories
