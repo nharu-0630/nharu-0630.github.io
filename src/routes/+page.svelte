@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { links, works } from '$lib/data';
+	import { ExternalLinks, PortfolioGroups } from '$lib/data';
 	import '../app.css';
 	import Background from './Background.svelte';
-	import WorkItem from './WorkItem.svelte';
+	import PortfolioItem from './PortfolioItem.svelte';
 </script>
 
 <svelte:head>
@@ -18,13 +18,16 @@
 	<section class="bio">
 		<p>Shizuoka University, Japan. Kano Laboratory. Specializing in Natural Language Processing.</p>
 	</section>
-	<section class="works">
-		{#each works as work}
-			<WorkItem {work} />
-		{/each}
-	</section>
+	{#each Object.entries(PortfolioGroups) as [title, items]}
+		<section class="groups">
+			<h2 class="section-title">{title}</h2>
+			{#each items as item}
+				<PortfolioItem {item} />
+			{/each}
+		</section>
+	{/each}
 	<section class="links">
-		{#each links as link}
+		{#each ExternalLinks as link}
 			<a href={link.url} target="_blank" rel="noopener noreferrer">{link.label}</a>
 		{/each}
 	</section>
@@ -33,33 +36,49 @@
 <style>
 	.content {
 		position: relative;
-		max-width: 600px;
+		max-width: 576px;
 		margin: 0 auto;
-		padding: 5vh 20px;
+		padding: 48px 24px;
 		display: flex;
 		flex-direction: column;
-		gap: 5vh;
+		gap: 48px;
 	}
 
 	.name {
-		font-size: 3rem;
+		font-size: 48px;
 		font-weight: 700;
 	}
 
 	.bio p {
-		font-size: 1.1rem;
+		font-size: 18px;
 		line-height: 1.5;
 	}
 
-	.works {
+	.section-title {
+		font-size: 36px;
+		font-weight: 700;
+	}
+
+	.groups {
 		display: flex;
 		flex-direction: column;
-		gap: 3vh;
+		gap: 24px;
 	}
 
 	.links {
+		padding-left: 12px;
 		display: flex;
-		flex-direction: column;
-		gap: 1.5vh;
+		flex-direction: row;
+		gap: 48px;
+	}
+
+	a {
+		color: var(--link-color);
+		text-decoration: none;
+		transition: opacity 0.3s ease;
+	}
+
+	a:hover {
+		color: var(--link-hover-color);
 	}
 </style>

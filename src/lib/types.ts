@@ -1,13 +1,13 @@
 import { type IUniform, Vector2 } from "three";
 
-export interface Work {
+export interface PortfolioItem {
     title: string;
     description: string;
     url: string;
     date: Date;
 }
 
-export interface Link {
+export interface ExternalLink {
     url: string;
     label: string;
 }
