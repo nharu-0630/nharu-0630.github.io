@@ -1,0 +1,110 @@
+/* @theme slide */
+
+@import 'default';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&family=Noto+Sans+JP&display=swap');
+
+:root {
+	font-family: 'Noto Sans JP', 'Work Sans Regular', Arial, sans-serif;
+	--main-color: #040014;
+	--text-color: #121114;
+	--bg-color-alt: #dadada;
+	--mark-background: #98d6ff;
+}
+
+section {
+	background-color: #ffffff;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--text-color);
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+header {
+	font-size: 0.7em;
+	color: var(--text-color);
+	border-bottom: 1px solid #040014;
+}
+
+footer {
+	font-size: 0.7em;
+	color: var(--text-color);
+	border-top: 1px solid #040014;
+}
+
+code {
+	background-color: #f5f5f5;
+	font-size: 0.9em;
+	font-family: monospace;
+}
+
+pre {
+	background-color: #f5f5f5;
+}
+
+section::after {
+	font-size: 0.75em;
+	content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+	color: var(--text-color);
+}
+
+img[alt~='center'] {
+	display: block;
+	margin: 0 auto;
+}
+
+blockquote {
+	background: #f9f9f9;
+	border-left: 10px solid var(--main-color);
+	margin: 0.5em;
+	padding: 0.5em;
+}
+
+mark {
+	background-color: var(--mark-background);
+	padding: 0 2px 2px;
+}
+
+table {
+	display: table;
+	width: auto;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+th {
+	background-color: #8ea2af;
+	color: white;
+	padding: 0.5em;
+}
+
+td {
+	padding: 0.5em;
+}
+
+section.tinytext > p,
+section.tinytext > ul,
+section.tinytext > blockquote {
+	font-size: 0.65em;
+}
+
+:lang(ja) {
+	font-feature-settings: 'palt';
+	text-align: justify;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+p,
+li,
+td,
+th {
+	letter-spacing: 0.01em;
+}
